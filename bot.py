@@ -2,7 +2,8 @@ import feedparser
 import time
 import telegram
 
-TOKEN = "8121540542:AAEyHEQfJ42sqlrq2nT0VNTm0yVVTDJMiCw"
+import os
+TOKEN = os.getenv("TOKEN")
 CHAT_ID = "@DailyNews20perMinutes"
 RSS_URL = "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en"
 
